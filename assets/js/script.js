@@ -17,6 +17,11 @@ navlink.forEach(link => {
     })
 })
 
+//             HIDDEN MENU WHEN YOU CLICK UN THE CLOSE ICON
+window.onscroll = () => {
+    menu.classList.remove('show-menu')
+}
+
 //             ADD BLUR HEADER
 const blurHeader = () => {
     const header = document.getElementById('header')

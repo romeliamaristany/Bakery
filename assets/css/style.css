@@ -212,6 +212,8 @@ li{
 /*===========SHOW MENU=================*/
 .show-menu{
     right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(18px);
 }
 .active-link{
     color: var(--first-color);
@@ -525,7 +527,9 @@ row-gap: 4rem;
 .footer-copy a:hover{
     color: var(--first-color);
 }
-
+.footer-info{
+    color: var(--title-color);
+}
 /*=========================SCROLL UP============================*/
 .scroll-up{
     background-color: var(--container-color);
@@ -1528,6 +1532,9 @@ row-gap: 4rem;
 
 }
 @media screen and (max-width:278px) {
+    .nav-img-1 {
+        width: 45px;
+    }
     .home-data .section-title {
         font-size: 2rem;
     }
@@ -1553,7 +1560,6 @@ row-gap: 4rem;
     .visit-content {
         grid-template-columns: 230px;
     }
-    
 }
 
 .home-footer{
