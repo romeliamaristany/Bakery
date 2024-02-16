@@ -162,7 +162,6 @@ li{
     font-size: 1.5rem;
     cursor: pointer;
 }
-
 /*===================RESPONSIVE NAVIGATION=============================*/
 @media screen and (max-width:1150px) {
     .nav-menu{
@@ -213,6 +212,9 @@ li{
 /*===========SHOW MENU=================*/
 .show-menu{
     right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(16px);
 }
 .active-link{
     color: var(--first-color);
