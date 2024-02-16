@@ -173,6 +173,7 @@ li{
         height: 100%;
         background-color: transparent;
         backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(16px);
         padding: 6rem 3rem 0;
         transition: right .4s;
     }
@@ -212,8 +213,6 @@ li{
 /*===========SHOW MENU=================*/
 .show-menu{
     right: 0;
-    background-color: transparent;
-    backdrop-filter: blur(18px);
 }
 .active-link{
     color: var(--first-color);
@@ -1366,6 +1365,9 @@ row-gap: 4rem;
     .new-content{
         margin-right: 60px;
     }
+    .scroll-up {
+        right: 1rem;
+    }
 }
 @media screen and (max-width:425px) {
     .new-content{
@@ -1408,6 +1410,7 @@ row-gap: 4rem;
         top: 16rem;
         left: 13rem;
     }
+    
 }
 @media screen and (max-width:370px) {
     .nav-img-1 {
@@ -1478,9 +1481,6 @@ row-gap: 4rem;
     }
     .footer-copy{
         font-size: .8rem;
-    }
-    .scroll-up {
-        right: 1rem;
     }
 
 }
