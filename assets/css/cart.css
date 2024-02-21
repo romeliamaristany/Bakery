@@ -89,6 +89,9 @@ html {
     left: 0;
     right: 0;
 }
+.car-product-subtotal{
+    color: var(--first-color);
+}
 .car-product-delete{
     background-color: transparent;
     font-size: 25px;
@@ -214,9 +217,6 @@ small{
     .favorite-img {
         width: 150px;
     }
-    .car-product-subtotal{
-        color: var(--first-color);
-    }
     .car-content p{
         font-size: 20px;
     }
@@ -285,4 +285,9 @@ small{
         padding: 1rem 20px;
     }
 
+}
+@media (max-width:344px){
+    .car-actions-total {
+        flex-direction: column;
+    }
 }
