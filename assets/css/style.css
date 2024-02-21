@@ -1371,7 +1371,7 @@ row-gap: 4rem;
         right: 1rem;
     }
 }
-@media screen and (max-width:425px) {
+mainbox@media screen and (max-width:425px) {
     .new-content{
         margin-right: 90px;
     }
@@ -1566,4 +1566,20 @@ row-gap: 4rem;
 
 .home-footer{
     overflow-x: clip;
+}
+.ri-shopping-cart-2-line{
+    color: var(--first-color);
+    transition: color .4s;
+}
+.ri-shopping-cart-2-line:hover{
+    color: var(--first-color-alt);
+}
+.car-span{
+    color: transparent;
+}
+.car-span-style{
+    background-color: var(--first-color);
+    color: var(--black-color);
+    padding: 4px 7px;
+    border-radius: 100%;
 }

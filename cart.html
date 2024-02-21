@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- ================lINK DE CSS======================-->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/cart.css">
+     <!-- ================lINK DE REMIXICONS======================-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+ 
+</head>
+<body>
+    <!--========================HEADER=============================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav-logo">Bakery</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link active-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#new" class="nav-link">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#favorite" class="nav-link">Favorites</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html#visit" class="nav-link">Location</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link">Cart
+                            <i class="ri-shopping-cart-2-line"></i>
+                            <span class="car-span disabled"></span>
+                        </a>
+                    </li>
+
+                </ul>
+            <!--===================CLOSE BUTTON==========================-->
+            <div class="nav-close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+
+            <img src="assets/img/bread-4.png" alt="image" class="nav-img-1">
+            <img src="assets/img/bread-1.png" alt="image" class="nav-img-2">
+
+            </div>
+            <!--===================MENU BUTTON==========================-->
+            <div class="nav-toggle" id="nav-toogle">
+                <i class="ri-menu-line"></i>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="car section" id="car">
+        <img src="assets/img/home-bg.jpg" alt="image" class="home-bg">
+        <div class="home-shadow"></div>
+
+        <div class="car-container conteiner grid">
+            <h2 class="main-title">Your products</h2>
+
+            <p id="empty-car" class="empty-car">Your car is empty <i class="ri-emotion-sad-line"></i></p>
+
+            <div class="car-content">
+                
+                <div id="car-products" class="car-products disabled">
+                    <div class="car-product-image">
+                        <img src="assets/img/favorite-bread-1.png" alt="image" class="favorite-img">
+                    </div>
+                    <div class="car-product-name">
+                        <small>Product</small>
+                        <h3>Whole Grain</h3>
+                    </div>
+                    <div class="car-product-cant">
+                        <small>Quentity</small>
+                        <p>1</p>
+                    </div>
+                    <div class="car-product-price">
+                        <small>Price</small>
+                        <p>$6</p>
+                    </div>
+                    <div class="car-product-subtotal">
+                        <small>Subtotal</small>
+                        <p>$6</p>
+                    </div>
+                    <button class="car-product-delete"><i class="ri-delete-bin-6-line"></i></button>
+                </div>
+
+            </div>
+
+            <div id="car-actions" class="car-actions disabled">
+                <div class="car-actions-left">
+                    <button id="car-actions-empty" class="car-actions-empty">Empty car</button>
+                </div>
+                <div class="car-actions-right">
+                    <div class="car-actions-total">
+                        <p>Total:&nbsp;</p>
+                        <p id="total"></p>
+                    </div>
+                    <button id="car-actions-buy" class="car-actions-buy">Buy Now</button>
+
+                </div>
+            </div>
+
+            <p id="buy-car" class="buy-car">Thank you very much for your purchase!<i class="ri-emotion-laugh-line"></i></i></p>
+      
+        </div>
+        </div>
+        </section>
+    </main>
+      <!--=======================SCROLL REVEAL==========================-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <!--=======================LINK JS=========================-->
+      <script src="assets/js/script.js"></script>
+</body>
+</html>
