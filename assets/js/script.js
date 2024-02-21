@@ -31,14 +31,14 @@ const breads = [
     {
         id: "bread-5",
         name: "Sourdough",
-        imagen: "./img/favorite-bread-5.png",
+        imagen: "assets/img/favorite-bread-5.png",
         category: "Bread",
         price: 7.00,
     },
     {
         id: "bread-6",
         name: "French",
-        imagen: "./img/favorite-bread-6.png",
+        imagen: "img/favorite-bread-6.png",
         category: "Bread",
         price: 3.00,
     }
@@ -99,15 +99,17 @@ const scrollActive = () => {
               sectionTop = current.offsetTop - 58,
               sectionId = current.getAttribute('id'),
               sectionClass = document.querySelector('.nav-menu a[href *=' + sectionId + ']')
-
+        
         if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
             sectionClass.classList.add('active-link')
         }else{
             sectionClass.classList.remove('active-link')
         }
+
     })
 }
 window.addEventListener('scroll', scrollActive)
+
 
 //                  SCROLL REVEAL ANIMATION
 const srAnimation = ScrollReveal({
