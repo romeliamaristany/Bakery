@@ -1371,7 +1371,7 @@ row-gap: 4rem;
         right: 1rem;
     }
 }
-mainbox@media screen and (max-width:425px) {
+@media screen and (max-width:425px) {
     .new-content{
         margin-right: 90px;
     }
