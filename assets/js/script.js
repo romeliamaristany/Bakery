@@ -17,14 +17,14 @@ const breads = [
     {
         id: "bread-3",
         name: "Wheat",
-        imagen: "./img/favorite-bread-3.png",
+        imagen: "assets/img/favorite-bread-3.png",
         category: "Bread",
         price: 3.00,
     },
     {
         id: "bread-4",
         name: "Multigrain",
-        imagen: "./img/favorite-bread-4.png",
+        imagen: "assets/img/favorite-bread-4.png",
         category: "Bread",
         price: 5.00,
     },
@@ -38,7 +38,7 @@ const breads = [
     {
         id: "bread-6",
         name: "French",
-        imagen: "img/favorite-bread-6.png",
+        imagen: "assets/img/favorite-bread-6.png",
         category: "Bread",
         price: 3.00,
     }
