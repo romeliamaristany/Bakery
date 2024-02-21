@@ -3,14 +3,14 @@ const breads = [
     {
         id: "bread-1",
         name: "Whole Grain",
-        imagen: "../img/favorite-bread-1.png",
+        imagen: "assets/img/favorite-bread-1.png",
         category: "Bread",
         price: 6.00,
     },
     {
         id: "bread-2",
         name: "Rye",
-        imagen: "../img/favorite-bread-2.png",
+        imagen: "assets/img/favorite-bread-2.png",
         category: "Bread",
         price: 8.00,
     },
