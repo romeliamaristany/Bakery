@@ -702,6 +702,9 @@ row-gap: 4rem;
     .scroll-up{
         right: 3rem;
     }
+    .ri-shopping-cart-2-line:before {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:1150px) {
     .header{
@@ -843,11 +846,15 @@ row-gap: 4rem;
     .scroll-up{
         right: 3rem;
     }
+    .ri-shopping-cart-2-line:before {
+        font-size: 25px;
+    }
 }
 @media screen and (max-width:1045px) {
     .home-footer {
         margin: 0 80px 0 40px;
     }
+    
 }
 @media screen and (max-width:1000px){
     .home-container{
@@ -1008,6 +1015,7 @@ row-gap: 4rem;
         flex-direction: column;
         align-items: center;
     }
+
 }
 @media screen and (max-width:695px) {
     .section {
@@ -1582,4 +1590,7 @@ row-gap: 4rem;
     color: var(--black-color);
     padding: 4px 7px;
     border-radius: 100%;
+}
+.nav-link{
+    display: flex;
 }
