@@ -140,11 +140,11 @@ srAnimation.reveal('.footer-container', {scale: 1})
 
 
 //      CHARGE THE PRODUCTS IN THE HTML
-function chargeBreads (someBreds) {
+function chargeBreads (someBreads) {
    if(document.querySelector('.favorite-container')){
     favoriteContainer.innerHTML = ""
 
-    someBreds.forEach(bread => {
+    someBreads.forEach(bread => {
         const div = document.createElement('div')
         div.classList.add('favorite-card')
         div.innerHTML = `
@@ -241,30 +241,30 @@ function chargeProductsCar(){
             div.classList.add('car-products')
             div.innerHTML =
 
-            `<div class="car-product-image">
-            <img src="${bread.imagen}" alt="${bread.name}" class="favorite-img">
-            </div>
-            <div class="car-product-name">
-                <small>Product</small>
-                <h3>${bread.name}</h3>
-            </div>
-            <div class="car-product-cant">
-                <small>Quentity</small>
-                <div class="cant-bread">
-                    <button class="more-bread" id="${bread.id}" ><i class="ri-add-line"></i></button>
-                    <p>${bread.cantidad}</p>
-                    <button class="less-bread" id="${bread.id}"><i class="ri-subtract-fill"></i></button>
+                `<div class="car-product-image">
+                    <img src="${bread.imagen}" alt="${bread.name}" class="favorite-img">
                 </div>
-            </div>
-            <div class="car-product-price">
-                <small>Price</small>
-                <p>${bread.price}</p>
-            </div>
-            <div class="car-product-subtotal">
-                <small>Subtotal</small>
-                <p>$${bread.price * bread.cantidad}</p>
-            </div>
-       `
+                <div class="car-product-name">
+                    <small>Product</small>
+                    <h3>${bread.name}</h3>
+                </div>
+                <div class="car-product-cant">
+                    <small>Quentity</small>
+                    <div class="cant-bread">
+                        <button class="more-bread" id="${bread.id}" ><i class="ri-add-line"></i></button>
+                        <p>${bread.cantidad}</p>
+                        <button class="less-bread" id="${bread.id}"><i class="ri-subtract-fill"></i></button>
+                    </div>
+                </div>
+                <div class="car-product-price">
+                    <small>Price</small>
+                    <p>${bread.price}</p>
+                </div>
+                <div class="car-product-subtotal">
+                    <small>Subtotal</small>
+                    <p>$${bread.price * bread.cantidad}</p>
+                </div>
+        `
             carProducts.append(div)
         });
         }
