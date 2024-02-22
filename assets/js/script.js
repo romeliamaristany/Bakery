@@ -1,51 +1,5 @@
 const menu  = document.querySelector('.nav-menu')
-const breads = [
-    {
-        id: "bread-1",
-        name: "Whole Grain",
-        imagen: "assets/img/favorite-bread-1.png",
-        category: "Bread",
-        price: 6.00,
-    },
-    {
-        id: "bread-2",
-        name: "Rye",
-        imagen: "assets/img/favorite-bread-2.png",
-        category: "Bread",
-        price: 8.00,
-    },
-    {
-        id: "bread-3",
-        name: "Wheat",
-        imagen: "assets/img/favorite-bread-3.png",
-        category: "Bread",
-        price: 3.00,
-    },
-    {
-        id: "bread-4",
-        name: "Multigrain",
-        imagen: "assets/img/favorite-bread-4.png",
-        category: "Bread",
-        price: 5.00,
-    },
-    {
-        id: "bread-5",
-        name: "Sourdough",
-        imagen: "assets/img/favorite-bread-5.png",
-        category: "Bread",
-        price: 7.00,
-    },
-    {
-        id: "bread-6",
-        name: "French",
-        imagen: "assets/img/favorite-bread-6.png",
-        category: "Bread",
-        price: 3.00,
-    }
-]
-const favoriteContainer = document.querySelector('.favorite-container')
-let buttonAdd = document.querySelectorAll(".favorite-button")
-const number = document.querySelector('.car-span')
+
 
 //                  SHOW MENU
 document.getElementById('nav-toogle').addEventListener('click', ()=>{
@@ -139,6 +93,55 @@ srAnimation.reveal('.footer-container', {scale: 1})
 
 
 
+const breads = [
+    {
+        id: "bread-1",
+        name: "Whole Grain",
+        imagen: "assets/img/favorite-bread-1.png",
+        category: "Bread",
+        price: 6.00,
+    },
+    {
+        id: "bread-2",
+        name: "Rye",
+        imagen: "assets/img/favorite-bread-2.png",
+        category: "Bread",
+        price: 8.00,
+    },
+    {
+        id: "bread-3",
+        name: "Wheat",
+        imagen: "assets/img/favorite-bread-3.png",
+        category: "Bread",
+        price: 3.00,
+    },
+    {
+        id: "bread-4",
+        name: "Multigrain",
+        imagen: "assets/img/favorite-bread-4.png",
+        category: "Bread",
+        price: 5.00,
+    },
+    {
+        id: "bread-5",
+        name: "Sourdough",
+        imagen: "assets/img/favorite-bread-5.png",
+        category: "Bread",
+        price: 7.00,
+    },
+    {
+        id: "bread-6",
+        name: "French",
+        imagen: "assets/img/favorite-bread-6.png",
+        category: "Bread",
+        price: 3.00,
+    }
+]
+const favoriteContainer = document.querySelector('.favorite-container')
+let buttonAdd = document.querySelectorAll(".favorite-button")
+const number = document.querySelector('.car-span')
+
+
 //      CHARGE THE PRODUCTS IN THE HTML
 function chargeBreads (someBreads) {
    if(document.querySelector('.favorite-container')){
@@ -195,13 +198,17 @@ function addCar(e) {
         number.classList.add('car-span-style')
         const index = breadCar.findIndex(bread => bread.id === idButton)
         breadCar[index].cantidad++
+        
     }else{
         number.classList.add('car-span-style')
         number.classList.remove('disabled')
         breadAdd.cantidad = 1
         breadCar.push(breadAdd)
+        
     }
+    
     updateCarNumber()
+    showNotification()
 
     localStorage.setItem('cart',JSON.stringify(breadCar))
     console.log(breadCar)
@@ -213,6 +220,15 @@ function updateCarNumber(){
     number.innerText = newNumber
 }
 
+function showNotification() {
+    var notification = document.getElementById('alert');
+
+    notification.style.display = "block";
+
+    setTimeout(function() {
+        notification.style.display = "none";
+    }, 1000);
+}
 
 //      CHARGE PRODUCTS CART
 const carProducts = document.querySelector('.car-content')
@@ -241,7 +257,7 @@ function chargeProductsCar(){
             div.classList.add('car-products')
             div.innerHTML =
 
-                `<div class="car-product-image">
+               `<div class="car-product-image">
                     <img src="${bread.imagen}" alt="${bread.name}" class="favorite-img">
                 </div>
                 <div class="car-product-name">
@@ -263,8 +279,7 @@ function chargeProductsCar(){
                 <div class="car-product-subtotal">
                     <small>Subtotal</small>
                     <p>$${bread.price * bread.cantidad}</p>
-                </div>
-        `
+                </div>`
             carProducts.append(div)
         });
         }
@@ -275,7 +290,6 @@ function chargeProductsCar(){
         buyCar.classList.add('disabled')
     }
 
-   // updateButtonDelete()
     updateButtonMore()
     updateButtonLess()
     updateTotalCost()

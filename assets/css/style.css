@@ -1599,3 +1599,24 @@ row-gap: 4rem;
 .nav-link i:hover{
     color: var(--first-color-alt);
 }
+.favorite-container{
+    position: relative;
+}
+.alert{
+    background-color: var(--first-color);
+    color: var(--black-color);
+    font-weight: 600;
+    position: fixed;
+    top: 5rem;
+    width: 230px;
+}
+.shadow-alert{
+    height: 40px;
+    background: linear-gradient(90deg, hsl(28deg 81.7% 53.47%)0%, hsl(0deg 0% 100% / 31%)100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disabled{
+    display: none;
+}
