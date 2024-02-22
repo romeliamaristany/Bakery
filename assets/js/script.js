@@ -223,10 +223,10 @@ function updateCarNumber(){
 function showNotification() {
     var notification = document.getElementById('alert');
 
-    notification.style.display = "block";
+    notification.classList.remove('disabled');
 
     setTimeout(function() {
-        notification.style.display = "none";
+        notification.classList.add('disabled');
     }, 1000);
 }
 
